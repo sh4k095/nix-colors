@@ -6,7 +6,7 @@
     nixpkgs-lib.url = "github:nix-community/nixpkgs.lib";
 
     # Upstream source of .yaml base24 schemes
-    base24-schemes.url = "github:sh4k095/schemes";
+    base24-schemes.url = "github:sh4k095/schemes?ref=sh4k0";
     base24-schemes.flake = false;
   };
 
