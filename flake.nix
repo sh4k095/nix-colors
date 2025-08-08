@@ -5,14 +5,14 @@
   inputs = {
     nixpkgs-lib.url = "github:nix-community/nixpkgs.lib";
 
-    # Upstream source of .yaml base16 schemes
-    base16-schemes.url = "github:tinted-theming/base16-schemes";
-    base16-schemes.flake = false;
+    # Upstream source of .yaml base24 schemes
+    base24-schemes.url = "github:sh4k095/schemes";
+    base24-schemes.flake = false;
   };
 
-  outputs = { self, nixpkgs-lib, base16-schemes }:
+  outputs = { self, nixpkgs-lib, base24-schemes }:
     import ./. {
       nixpkgs-lib = nixpkgs-lib.lib;
-      base16-schemes = base16-schemes.outPath;
+      base24-schemes = base24-schemes.outPath;
     };
 }
